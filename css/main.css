@@ -479,14 +479,14 @@ button {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--accent-bgcolor-40)), to(var(--accent-bgcolor-40))), url("../../images/hero_background_480.jpg");
-  background-image: linear-gradient(to right, var(--accent-bgcolor-40), var(--accent-bgcolor-40)), url("../../images/hero_background_480.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--accent-bgcolor-40)), to(var(--accent-bgcolor-40))), url("../images/hero_background_480.jpg");
+  background-image: linear-gradient(to right, var(--accent-bgcolor-40), var(--accent-bgcolor-40)), url("../images/hero_background_480.jpg");
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .section__block-background {
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--accent-bgcolor-40)), to(var(--accent-bgcolor-40))), url("../../images/hero_background_480@2x.jpg");
-    background-image: linear-gradient(to right, var(--accent-bgcolor-40), var(--accent-bgcolor-40)), url("../../images/hero_background_480@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--accent-bgcolor-40)), to(var(--accent-bgcolor-40))), url("../images/hero_background_480@2x.jpg");
+    background-image: linear-gradient(to right, var(--accent-bgcolor-40), var(--accent-bgcolor-40)), url("../images/hero_background_480@2x.jpg");
   }
 }
 
