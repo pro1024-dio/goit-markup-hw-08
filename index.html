@@ -29,7 +29,7 @@
     <header class="header">
       <div class="wrapper wrapper--borderbottom">
         <div
-          class="container container--forheader container--display container--aligncenter"
+          class="container container--forheader container--display container--spacebetween"
         >
           <p class="logo logo--inheader">
             <a class="logo__link" href="./index.html"
@@ -38,6 +38,15 @@
               ></a
             >
           </p>
+          <button
+            type="submit"
+            class="btn-submit btn-submit--menu btn-submit--only-icon"
+            data-modal-close
+          >
+            <svg class="btn-submit__icon" width="24" height="16">
+              <use href="./images/icons.svg#menu_24px"></use>
+            </svg>
+          </button>
           <nav class="header__nav">
             <ul class="menu">
               <li class="menu__item">
@@ -55,37 +64,37 @@
                 <a class="menu__link" href="#contacts">Контакты</a>
               </li>
             </ul>
+            <ul class="listinfo listinfo--display-header">
+              <li class="listinfo__item listinfo__item--margin-in-header">
+                <a
+                  class="listinfo__link listinfo__link--view-for-header"
+                  href="mailto:info@devstudio.com"
+                >
+                  <svg class="listinfo__icon" width="16" height="12">
+                    <use
+                      class="listinfo__icon--mailto"
+                      href="./images/icons.svg#envelope"
+                    ></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="listinfo__item listinfo__item--margin-in-header">
+                <a
+                  class="listinfo__link listinfo__link--view-for-header"
+                  href="tel:+380961111111"
+                >
+                  <svg class="listinfo__icon" width="10" height="16">
+                    <use
+                      class="listinfo__icon--tel"
+                      href="./images/icons.svg#smartphone"
+                    ></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
           </nav>
-          <ul class="listinfo listinfo--display-header">
-            <li class="listinfo__item listinfo__item--margin-in-header">
-              <a
-                class="listinfo__link listinfo__link--view-for-header"
-                href="mailto:info@devstudio.com"
-              >
-                <svg class="listinfo__icon" width="16" height="12">
-                  <use
-                    class="listinfo__icon--mailto"
-                    href="./images/icons.svg#envelope"
-                  ></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="listinfo__item listinfo__item--margin-in-header">
-              <a
-                class="listinfo__link listinfo__link--view-for-header"
-                href="tel:+380961111111"
-              >
-                <svg class="listinfo__icon" width="10" height="16">
-                  <use
-                    class="listinfo__icon--tel"
-                    href="./images/icons.svg#smartphone"
-                  ></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
         </div>
       </div>
     </header>

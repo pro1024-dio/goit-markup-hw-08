@@ -1,0 +1,83 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  color: var(--basic-textcolor);
+}
+
+/* ------- 
+
+reset style for tags and base classes
+
+------- */
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body p,
+body ul {
+  padding: 0;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  background-color: transparent;
+  box-sizing: border-box;
+  margin: 0em;
+  padding: 0;
+  border: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin placeItemsGrid($indent) {
+  justify-content: flex-start;
+  margin-top: calc(-1 * #{$indent});
+  margin-left: calc(-1 * #{$indent});
+}
+
+@mixin buildGrid($rowitem, $indent) {
+  flex-basis: calc(100% / #{$rowitem} - #{$indent});
+  margin-top: #{$indent};
+  margin-left: #{$indent};
+}
+
+@mixin centeredFlex($display, $width: 100%) {
+  display: #{$display};
+  justify-content: center;
+  align-items: center;
+  width: #{$width};
+}

@@ -1,0 +1,64 @@
+.section__block-background {
+  min-width: var(--minwidth-container);
+  max-width: var(--minwidth-canvas);
+  height: var(--minheight-canvas);
+  margin: 0 auto;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+      to right,
+      var(--accent-bgcolor-40),
+      var(--accent-bgcolor-40)
+    ),
+    url('../../images/hero_background_480.jpg');
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        var(--accent-bgcolor-40),
+        var(--accent-bgcolor-40)
+      ),
+      url('../../images/hero_background_480@2x.jpg');
+  }
+}
+
+.section__headline {
+  display: block;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--white-color);
+}
+
+.section--ourteam {
+  min-width: var(--width-container);
+  background-color: var(--section-bgcolor);
+}
+
+.section__title {
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--basic-hcolor);
+
+  &--whitecolor {
+    color: var(--white-color);
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+}
+
+.text {
+  line-height: 1.71;
+}

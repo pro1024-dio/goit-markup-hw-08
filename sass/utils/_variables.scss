@@ -1,0 +1,39 @@
+:root {
+  --basic-textcolor: rgba(117, 117, 117, 1);
+  --basic-textcolor-50: rgba(117, 117, 117, 0.5);
+  --white-color: rgba(255, 255, 255, 1);
+  --accent-color: rgba(33, 150, 243, 1);
+  --basic-hcolor: rgba(33, 33, 33, 1);
+  --footter-acolor-60: rgba(255, 255, 255, 0.6);
+  --footter-acolor-10: rgba(255, 255, 255, 0.1);
+  --accent-bgcolor: rgba(47, 48, 58, 1);
+  --accent-bgcolor-40: rgba(47, 48, 58, 0.4);
+  --accent-bgcolor-80: rgba(47, 48, 58, 0.8);
+  --section-bgcolor: rgba(245, 244, 250, 1);
+  --logo-dark-part-color: rgba(0, 0, 0, 1);
+  --logo-light-part-color: rgba(255, 255, 255, 1);
+  --border-card-color: rgba(238, 238, 238, 1);
+  --border-header-color: rgba(236, 236, 236, 1);
+  --social-color: rgba(175, 177, 184, 1);
+  --maxwidth-container: 1200px;
+  --minwidth-container: 320px;
+  --breakpoint-mobile: 480px;
+  --breakpoint-tablet: 768px;
+  --maxwidth-canvas: 1600px;
+  --minwidth-canvas: 480px;
+  --maxheight-canvas: 600px;
+  --minheight-canvas: 400px;
+  --min-indent: 30px;
+  --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  --timing-transition: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 
+Черный лого rgba(0,0,0,1);
+акцент rgba(33,150,243,1);
+неактивный меню rgba(33,33,33,1);
+неактивная ссылка rgba(117,117,117,1);
+Основной белый rgba(255,255,255,1);
+border: 1px solid 236,236,236,1
+ */

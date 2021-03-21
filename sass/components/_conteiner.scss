@@ -1,0 +1,44 @@
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+
+  &--forheader {
+    padding: 0 15px;
+  }
+
+  &--forfooter {
+    padding: 60px 15px;
+  }
+
+  &--display {
+    display: flex;
+  }
+
+  &--aligncenter {
+    align-items: center;
+  }
+
+  &--spacebetween {
+    //
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &--forsection {
+    padding: 94px 15px;
+  }
+
+  &--forhero {
+    padding: 118px 0;
+
+    @media screen and (min-width: 769px) {
+      padding: 200px 0;
+    }
+  }
+
+  &--forportfolio {
+    padding: 94px 15px;
+    padding-top: 0;
+  }
+}
