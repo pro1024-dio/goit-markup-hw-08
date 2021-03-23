@@ -1,0 +1,55 @@
+.social-list {
+  // display: flex;
+  // flex-basis: 100%;
+  width: 100%;
+  list-style: none;
+  color: var(--social-color);
+
+  &--for-footer {
+    // justify-content: space-between;
+
+    text-align: center;
+  }
+
+  &--for-ourteam {
+    // justify-content: space-around;
+    text-align: center;
+  }
+}
+
+.social-list__item {
+  display: inline-block;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social-list__link {
+  @include centeredFlex(inline-flex);
+  width: 44px;
+  height: 44px;
+  color: var(--social-color);
+  background-color: var(--footter-acolor-10);
+  border-radius: 50%;
+  outline: none;
+  transition: background-color 250ms var(--timing-transition);
+
+  &--whitecolor {
+    color: var(--white-color);
+  }
+
+  &:hover {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+  }
+
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+  }
+}
+
+.social-list__icon {
+  fill: currentColor;
+}

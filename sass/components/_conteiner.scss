@@ -26,7 +26,7 @@
   }
 
   &--forsection {
-    padding: 94px 15px;
+    padding: var(--section-interval-mobile) 15px;
   }
 
   &--forhero {
@@ -37,7 +37,7 @@
     }
   }
 
-  &--forportfolio {
+  &--for-whatdo {
     padding: 94px 15px;
     padding-top: 0;
   }

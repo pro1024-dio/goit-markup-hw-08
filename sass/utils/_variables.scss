@@ -15,6 +15,7 @@
   --border-card-color: rgba(238, 238, 238, 1);
   --border-header-color: rgba(236, 236, 236, 1);
   --social-color: rgba(175, 177, 184, 1);
+
   --maxwidth-container: 1200px;
   --minwidth-container: 320px;
   --breakpoint-mobile: 480px;
@@ -23,9 +24,25 @@
   --minwidth-canvas: 480px;
   --maxheight-canvas: 600px;
   --minheight-canvas: 400px;
+
   --min-indent: 30px;
+  --section-interval-mobile: 60px;
+  --section-interval-desktop: 94px;
+  --items-interval: 30px;
+
+  --headline-size-mobile: 26px;
+  --headline-size-desktop: 44px;
+  --headline-lineheight-mobile: 1.62;
+  --headline-lineheight-desktop: 1.36;
+
+  --headsection-size-mobile: 28px;
+  --headsection-size-desktop: 36px;
+  --headsection-lineheight-mobile: 1.18;
+  --headsection-lineheight-desktop: 1.17;
+
   --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
   --timing-transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 

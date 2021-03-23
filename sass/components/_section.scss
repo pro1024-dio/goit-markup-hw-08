@@ -27,10 +27,10 @@
 
 .section__headline {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: var(--items-interval);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: var(--headline-size-mobile);
+  line-height: var(--headline-lineheight-mobile);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
@@ -38,7 +38,8 @@
 }
 
 .section--ourteam {
-  min-width: var(--width-container);
+  min-width: var(--minwidth-container);
+  max-width: var(--breakpoint-mobile);
   background-color: var(--section-bgcolor);
 }
 
@@ -46,8 +47,8 @@
   margin-bottom: 50px;
   text-align: center;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: var(--headsection-size-mobile);
+  line-height: var(--headsection-lineheight-mobile);
   color: var(--basic-hcolor);
 
   &--whitecolor {

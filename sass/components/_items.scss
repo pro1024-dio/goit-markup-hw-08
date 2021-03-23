@@ -1,0 +1,122 @@
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+
+  &--type-of-grid {
+    @include placeItemsGrid(var(--min-indent));
+  }
+}
+
+.items__item {
+  outline: none;
+
+  &--for-features {
+    @include buildGrid(1, var(--min-indent));
+  }
+
+  &--for-clients {
+    @include buildGrid(2, var(--min-indent));
+  }
+}
+
+.items__item--relative {
+  position: relative;
+}
+
+.items__link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--social-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: none;
+  outline: none;
+
+  transition: color 250ms var(--timing-transition),
+    box-shadow 250ms var(--timing-transition);
+
+  &:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+
+  &:focus {
+    color: var(--accent-color);
+    box-sizing: border-box;
+    border: 0;
+    box-shadow: 0 0 0 1px var(--accent-color);
+  }
+}
+
+.items__thumb {
+  // @include centeredFlex(flex);
+  text-align: center;
+  border-radius: 4px;
+
+  &--for-features {
+    height: 120px;
+    line-height: 120px;
+    background-color: var(--section-bgcolor);
+  }
+
+  &--for-clients {
+    height: 90px;
+    line-height: 90px;
+  }
+
+  &--with-margin-bottom {
+    margin-bottom: var(--min-indent);
+  }
+}
+
+.items__icon {
+  display: inline;
+  vertical-align: middle;
+}
+
+.items__title {
+  font-weight: 700;
+  color: var(--basic-hcolor);
+  text-transform: uppercase;
+  text-align: center;
+
+  &--with-margin-bottom {
+    margin-bottom: 10px;
+  }
+}
+
+.items__overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.items__overlay-title {
+  padding: 27px 0;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+
+.items__overlay--bg-img {
+  background-image: linear-gradient(
+    to right,
+    var(--accent-bgcolor-80),
+    var(--accent-bgcolor-80)
+  );
+}
+
+.items__text {
+  line-height: 1.71;
+}
+
+.items__icon {
+  fill: currentColor;
+}
