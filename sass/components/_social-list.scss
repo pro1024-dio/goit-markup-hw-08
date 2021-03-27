@@ -12,7 +12,9 @@
   }
 }
 
-.social-list__item--container {
+.social-list__item {
+  display: inline-block;
+
   &:not(:last-child) {
     margin-right: 10px;
   }
@@ -21,6 +23,7 @@
 .social-list__item--in-mobile-menu {
   position: relative;
   display: unset;
+  margin: 0;
   padding-right: 10px;
   padding-left: 10px;
 

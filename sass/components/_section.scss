@@ -1,11 +1,11 @@
 .section {
-  max-width: var(--breakpoint-mobile);
+  max-width: 100%;
   min-width: var(--minwidth-container);
 }
 
 .section__block-background {
-  min-width: var(--minwidth-container);
-  max-width: var(--minwidth-canvas);
+  min-width: var(--minwidth-canvas);
+  max-width: var(--breakpoint-tablet);
   height: var(--minheight-canvas);
   margin: 0 auto;
   background-position: 50% 50%;
@@ -28,6 +28,49 @@
       ),
       url('../images/hero_background_480@2x.jpg');
   }
+
+  @media screen and (min-width: 768px) {
+    max-width: var(--maxwidth-container);
+    background-image: linear-gradient(
+        to right,
+        var(--accent-bgcolor-40),
+        var(--accent-bgcolor-40)
+      ),
+      url('../images/hero_background_768.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          var(--accent-bgcolor-40),
+          var(--accent-bgcolor-40)
+        ),
+        url('../images/hero_background_768@2x.jpg');
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: var(--maxwidth-canvas);
+    height: var(--maxheight-canvas);
+    background-image: linear-gradient(
+        to right,
+        var(--accent-bgcolor-40),
+        var(--accent-bgcolor-40)
+      ),
+      url('../images/hero_background_1600.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          var(--accent-bgcolor-40),
+          var(--accent-bgcolor-40)
+        ),
+        url('../images/hero_background_1600@2x.jpg');
+    }
+  }
 }
 
 .section__headline {
@@ -36,6 +79,12 @@
   font-weight: 900;
   font-size: var(--headline-size-mobile);
   line-height: var(--headline-lineheight-mobile);
+
+  @media screen and (min-width: 1200px) {
+    font-size: var(--headline-size-desktop);
+    line-height: var(--headline-lineheight-desktop);
+  }
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
@@ -52,6 +101,12 @@
   font-weight: 700;
   font-size: var(--headsection-size-mobile);
   line-height: var(--headsection-lineheight-mobile);
+
+  @media screen and (min-width: 1200px) {
+    font-size: var(--headsection-size-desktop);
+    line-height: var(--headsection-lineheight-desktop);
+  }
+
   color: var(--basic-hcolor);
 
   &--whitecolor {

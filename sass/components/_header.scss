@@ -1,13 +1,13 @@
 .header {
   height: 60px;
 
-  @media screen and (min-width: 481px) {
-    min-height: 80px;
+  @media screen and (min-width: 1200px) {
+    height: 80px;
   }
 }
 
 .header__nav {
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }

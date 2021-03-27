@@ -4,13 +4,20 @@
   font-size: 24px;
   line-height: 1.67;
 
-  // &--inheader {
-  //   margin-right: 93px;
-  // }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+
+    &--inheader {
+      margin-right: 93px;
+    }
+  }
 
   &--infooter {
     margin-bottom: var(--footer-vertical-item-interval);
-    text-align: center;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
   }
 }
 

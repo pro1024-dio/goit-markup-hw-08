@@ -14,10 +14,26 @@
 
   &--for-features {
     @include buildGrid(1, var(--min-indent));
+
+    @media screen and (min-width: 768px) {
+      @include buildGrid(2, var(--min-indent));
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include buildGrid(4, var(--min-indent));
+    }
   }
 
   &--for-clients {
     @include buildGrid(2, var(--min-indent));
+
+    @media screen and (min-width: 768px) {
+      @include buildGrid(3, var(--min-indent));
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include buildGrid(6, var(--min-indent));
+    }
   }
 }
 

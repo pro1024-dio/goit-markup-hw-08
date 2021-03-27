@@ -20,12 +20,30 @@
 
   &--for-ourteam {
     @include buildGrid(1, var(--min-indent));
+
+    @media screen and (min-width: 768px) {
+      @include buildGrid(2, var(--min-indent));
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include buildGrid(4, var(--min-indent));
+    }
+
     border-radius: 0px 0px 4px 4px;
     box-shadow: var(--card-shadow);
   }
 
   &--for-page-portfolio {
     @include buildGrid(1, var(--min-indent));
+
+    @media screen and (min-width: 768px) {
+      @include buildGrid(2, var(--min-indent));
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include buildGrid(3, var(--min-indent));
+    }
+
     border: 1px solid var(--border-card-color);
     box-shadow: none;
 
