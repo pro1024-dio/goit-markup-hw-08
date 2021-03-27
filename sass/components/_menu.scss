@@ -1,43 +1,55 @@
 .menu {
   // display: flex;
   // align-items: center;
-  // list-style: none;
+  list-style: none;
 }
 
 .menu__item {
-  position: relative;
+  // position: relative;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
-  &:not(:first-child) {
-    margin-left: 50px;
+  &:first-child {
+    padding-top: 0;
   }
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+  // &:not(:first-child) {
+  //   margin-left: 50px;
+  //}
 }
 
 .menu__link {
-  display: inline-block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  text-decoration: none;
+  display: block;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
+
   font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
   letter-spacing: 0.02em;
-  color: var(--basic-hcolor);
+  text-decoration: none;
   outline: none;
+  color: var(--basic-hcolor);
 
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -1px;
-    right: 0;
-    display: block;
-    width: 100%;
-    height: 4px;
-    background: var(--accent-color);
-    border-radius: 2px;
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   bottom: -1px;
+  //   right: 0;
+  //   display: block;
+  //   width: 100%;
+  //   height: 4px;
+  //   background: var(--accent-color);
+  //   border-radius: 2px;
 
-    transform: scaleX(0);
-    transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function: var(--timing-transition);
-  }
+  //   transform: scaleX(0);
+  //   transition-property: transform;
+  //   transition-duration: 250ms;
+  //   transition-timing-function: var(--timing-transition);
+  // }
 
   &:hover,
   &:focus {
@@ -45,21 +57,21 @@
     outline: none;
   }
 
-  &:not(&--active):hover::after,
-  &:not(&--active):focus::after {
-    content: '';
-    display: block;
+  // &:not(&--active):hover::after,
+  // &:not(&--active):focus::after {
+  //   content: '';
+  //   display: block;
 
-    transform: scaleX(1);
-  }
+  //   transform: scaleX(1);
+  // }
 
   &--active {
     color: var(--accent-color);
   }
 
-  &--active::after {
-    content: '';
-    width: 100%;
-    transform: scaleX(1);
-  }
+  // &--active::after {
+  //   content: '';
+  //   width: 100%;
+  //   transform: scaleX(1);
+  // }
 }

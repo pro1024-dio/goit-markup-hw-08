@@ -1,5 +1,9 @@
+%centered-footerblock {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
 .footer {
-  min-width: var(--width-container);
   background-color: var(--accent-bgcolor);
 }
 
@@ -11,23 +15,32 @@
   padding-top: 60px;
 }
 
+.footer__block-contact {
+  @extend %centered-footerblock;
+}
+
+.footer__block-social {
+  @extend %centered-footerblock;
+}
+
+.footer__block-subscribe {
+  text-align: center;
+}
+
 .footer__address {
   text-align: center;
 }
 
 .footer__address-desc {
-  // display: inline-block;
   margin-bottom: 9px;
   color: var(--white-color);
 }
 
 .footer__title {
-  // display: inline-flex;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: center;
   color: var(--white-color);
 }

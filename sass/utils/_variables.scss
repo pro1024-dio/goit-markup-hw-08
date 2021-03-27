@@ -2,8 +2,12 @@
   --basic-textcolor: rgba(117, 117, 117, 1);
   --basic-textcolor-50: rgba(117, 117, 117, 0.5);
   --white-color: rgba(255, 255, 255, 1);
+  --black-color: rgba(0, 0, 0, 1);
+  --black-color-10: rgba(0, 0, 0, 0.1);
   --accent-color: rgba(33, 150, 243, 1);
   --basic-hcolor: rgba(33, 33, 33, 1);
+  --basic-hcolor-10: rgba(33, 33, 33, 0.1);
+  --basic-hcolor-20: rgba(33, 33, 33, 0.2);
   --footter-acolor-60: rgba(255, 255, 255, 0.6);
   --footter-acolor-10: rgba(255, 255, 255, 0.1);
   --accent-bgcolor: rgba(47, 48, 58, 1);
@@ -24,6 +28,9 @@
   --minwidth-canvas: 480px;
   --maxheight-canvas: 600px;
   --minheight-canvas: 400px;
+
+  --footer-vertical-block-interval: 60px;
+  --footer-vertical-item-interval: 20px;
 
   --min-indent: 30px;
   --section-interval-mobile: 60px;

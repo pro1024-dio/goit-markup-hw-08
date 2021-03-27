@@ -17,10 +17,10 @@
     <link rel="stylesheet" href="../css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header section">
       <div class="wrapper wrapper--borderbottom">
         <div
-          class="container container--forheader container--display container--aligncenter"
+          class="container container--forheader container--display container--spacebetween"
         >
           <p class="logo logo--inheader">
             <a class="logo__link" href="../index.html"
@@ -29,6 +29,15 @@
               ></a
             >
           </p>
+          <button
+            type="submit"
+            class="btn-submit btn-submit--menu btn-submit--only-icon"
+            data-modal-close
+          >
+            <svg class="btn-submit__icon" width="24" height="16">
+              <use href="../images/icons.svg#menu_24px"></use>
+            </svg>
+          </button>
           <nav class="header__nav">
             <ul class="menu">
               <li class="menu__item">
@@ -46,49 +55,49 @@
                 <a class="menu__link" href="#contacts">Контакты</a>
               </li>
             </ul>
+            <ul class="listinfo listinfo--display-header">
+              <li class="listinfo__item listinfo__item--margin-in-header">
+                <a
+                  class="listinfo__link listinfo__link--view-for-header"
+                  href="mailto:info@devstudio.com"
+                >
+                  <svg class="listinfo__icon" width="16" height="12">
+                    <use
+                      class="listinfo__icon--mailto"
+                      href="../images/icons.svg#envelope"
+                    ></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="listinfo__item listinfo__item--margin-in-header">
+                <a
+                  class="listinfo__link listinfo__link--view-for-header"
+                  href="tel:+380961111111"
+                >
+                  <svg class="listinfo__icon" width="10" height="16">
+                    <use
+                      class="listinfo__icon--tel"
+                      href="../images/icons.svg#smartphone"
+                    ></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
           </nav>
-          <ul class="listinfo listinfo--display-header">
-            <li class="listinfo__item listinfo__item--margin-in-header">
-              <a
-                class="listinfo__link listinfo__link--view-for-header"
-                href="mailto:info@devstudio.com"
-              >
-                <svg class="listinfo__icon" width="16" height="12">
-                  <use
-                    class="listinfo__icon--mailto"
-                    href="../images/icons.svg#envelope"
-                  ></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="listinfo__item listinfo__item--margin-in-header">
-              <a
-                class="listinfo__link listinfo__link--view-for-header"
-                href="tel:+380961111111"
-              >
-                <svg class="listinfo__icon" width="10" height="16">
-                  <use
-                    class="listinfo__icon--tel"
-                    href="../images/icons.svg#smartphone"
-                  ></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
         </div>
       </div>
     </header>
     <main>
-      <section class="page-portfolio">
+      <section class="page-portfolio section">
         <div class="container container--forsection">
           <h1 class="section__title visually-hidden">Наши работы</h1>
           <!-- Группа кнопок для фильтра работ -->
           <ul class="nav-filter">
             <li class="nav-filter__item">
               <button
-                class="btn-submit nav-filter__btn-submit nav-filter__btn-submit--active"
+                class="btn-submit btn-submit--filter btn-submit--filter-active"
                 type="submit"
                 tabindex="-1"
               >
@@ -96,22 +105,22 @@
               </button>
             </li>
             <li class="nav-filter__item">
-              <button class="btn-submit nav-filter__btn-submit" type="submit">
+              <button class="btn-submit btn-submit--filter" type="submit">
                 Веб-сайты
               </button>
             </li>
             <li class="nav-filter__item">
-              <button class="btn-submit nav-filter__btn-submit" type="submit">
+              <button class="btn-submit btn-submit--filter" type="submit">
                 Приложения
               </button>
             </li>
             <li class="nav-filter__item">
-              <button class="btn-submit nav-filter__btn-submit" type="submit">
+              <button class="btn-submit btn-submit--filter" type="submit">
                 Дизайн
               </button>
             </li>
             <li class="nav-filter__item">
-              <button class="btn-submit nav-filter__btn-submit" type="submit">
+              <button class="btn-submit btn-submit--filter" type="submit">
                 Маркетинг
               </button>
             </li>
@@ -119,10 +128,18 @@
           <!-- Группа карточек с работами -->
           <div class="page-portfolio__cards-container">
             <ul class="cards cards--type-of-grid">
-              <li class="cards__card cards__card--for-page-portfolio">
-                <a class="cards__link" href="#">
+              <li
+                class="cards__card cards__card--for-page-portfolio"
+                id="portfolio1"
+              >
+                <a class="cards__link" href="#portfolio1">
                   <div class="cards__thumb">
                     <img
+                      class="cards__img"
+                      srcset="
+                        ../images/portfolio1.jpg    1x,
+                        ../images/portfolio1@2x.jpg 2x
+                      "
                       src="../images/portfolio1.jpg"
                       alt="Веб-сайт Технокряк"
                     />
@@ -143,10 +160,18 @@
                   </div>
                 </a>
               </li>
-              <li class="cards__card cards__card--for-page-portfolio">
-                <a class="cards__link" href="#">
+              <li
+                class="cards__card cards__card--for-page-portfolio"
+                id="portfolio2"
+              >
+                <a class="cards__link" href="#portfolio2">
                   <div class="cards__thumb">
                     <img
+                      class="cards__img"
+                      srcset="
+                        ../images/portfolio2.jpg    1x,
+                        ../images/portfolio2@2x.jpg 2x
+                      "
                       src="../images/portfolio2.jpg"
                       alt="Дизайн Постер New Orlean vs Golden Star"
                     />
@@ -168,10 +193,18 @@
                   </div>
                 </a>
               </li>
-              <li class="cards__card cards__card--for-page-portfolio">
-                <a class="cards__link" href="#">
+              <li
+                class="cards__card cards__card--for-page-portfolio"
+                id="portfolio3"
+              >
+                <a class="cards__link" href="#portfolio3">
                   <div class="cards__thumb">
                     <img
+                      class="cards__img"
+                      srcset="
+                        ../images/portfolio3.jpg    1x,
+                        ../images/portfolio3@2x.jpg 2x
+                      "
                       src="../images/portfolio3.jpg"
                       alt="Приложение Ресторан Seafood"
                     />
@@ -193,10 +226,18 @@
                   </div>
                 </a>
               </li>
-              <li class="cards__card cards__card--for-page-portfolio">
-                <a class="cards__link" href="#">
+              <li
+                class="cards__card cards__card--for-page-portfolio"
+                id="portfolio4"
+              >
+                <a class="cards__link" href="#portfolio4">
                   <div class="cards__thumb">
                     <img
+                      class="cards__img"
+                      srcset="
+                        ../images/portfolio4.jpg    1x,
+                        ../images/portfolio4@2x.jpg 2x
+                      "
                       src="../images/portfolio4.jpg"
                       alt="Маркетинг Проект Prime"
                     />
@@ -218,10 +259,18 @@
                   </div>
                 </a>
               </li>
-              <li class="cards__card cards__card--for-page-portfolio">
-                <a class="cards__link" href="#">
+              <li
+                class="cards__card cards__card--for-page-portfolio"
+                id="portfolio5"
+              >
+                <a class="cards__link" href="#portfolio5">
                   <div class="cards__thumb">
                     <img
+                      class="cards__img"
+                      srcset="
+                        ../images/portfolio5.jpg    1x,
+                        ../images/portfolio5@2x.jpg 2x
+                      "
                       src="../images/portfolio5.jpg"
                       alt="Приложение Проект Boxes"
                     />
@@ -243,10 +292,18 @@
                   </div>
                 </a>
               </li>
-              <li class="cards__card cards__card--for-page-portfolio">
-                <a class="cards__link" href="#">
+              <li
+                class="cards__card cards__card--for-page-portfolio"
+                id="portfolio6"
+              >
+                <a class="cards__link" href="#portfolio6">
                   <div class="cards__thumb">
                     <img
+                      class="cards__img"
+                      srcset="
+                        ../images/portfolio6.jpg    1x,
+                        ../images/portfolio6@2x.jpg 2x
+                      "
                       src="../images/portfolio6.jpg"
                       alt="Веб-сайт Inspiration has no Borders"
                     />
@@ -268,10 +325,18 @@
                   </div>
                 </a>
               </li>
-              <li class="cards__card cards__card--for-page-portfolio">
-                <a class="cards__link" href="#">
+              <li
+                class="cards__card cards__card--for-page-portfolio"
+                id="portfolio7"
+              >
+                <a class="cards__link" href="#portfolio7">
                   <div class="cards__thumb">
                     <img
+                      class="cards__img"
+                      srcset="
+                        ../images/portfolio7.jpg    1x,
+                        ../images/portfolio7@2x.jpg 2x
+                      "
                       src="../images/portfolio7.jpg"
                       alt="Дизайн Издание Limited Edition"
                     />
@@ -293,10 +358,18 @@
                   </div>
                 </a>
               </li>
-              <li class="cards__card cards__card--for-page-portfolio">
-                <a class="cards__link" href="#">
+              <li
+                class="cards__card cards__card--for-page-portfolio"
+                id="portfolio8"
+              >
+                <a class="cards__link" href="#portfolio8">
                   <div class="cards__thumb">
                     <img
+                      class="cards__img"
+                      srcset="
+                        ../images/portfolio8.jpg    1x,
+                        ../images/portfolio8@2x.jpg 2x
+                      "
                       src="../images/portfolio8.jpg"
                       alt="Маркетинг Проект LAB"
                     />
@@ -316,10 +389,18 @@
                   </div>
                 </a>
               </li>
-              <li class="cards__card cards__card--for-page-portfolio">
-                <a class="cards__link" href="#">
+              <li
+                class="cards__card cards__card--for-page-portfolio"
+                id="portfolio9"
+              >
+                <a class="cards__link" href="#portfolio9">
                   <div class="cards__thumb">
                     <img
+                      class="cards__img"
+                      srcset="
+                        ../images/portfolio9.jpg    1x,
+                        ../images/portfolio9@2x.jpg 2x
+                      "
                       src="../images/portfolio9.jpg"
                       alt="Приложение Growing Business"
                     />
@@ -359,11 +440,9 @@
       </section>
     </main>
     <!-- Section FOOTER -->
-    <footer class="footer" id="contacts">
+    <footer class="footer section" id="contacts">
       <div class="wrapper footer__wrapper">
-        <div
-          class="container container--forfooter container--display container--spacebetween"
-        >
+        <div class="container container--forfooter">
           <div class="footer__block-contact">
             <p class="logo logo--infooter">
               <a class="logo__link" href="../index.html"
@@ -396,8 +475,8 @@
           </div>
           <div class="footer__block-social">
             <h2 class="footer__title">Присоединяйтесь</h2>
-            <ul class="social-list social-list--for-footer">
-              <li class="social-list__item-footer">
+            <ul class="social-list">
+              <li class="social-list__item">
                 <a
                   class="social-list__link social-list__link--whitecolor"
                   href="https://instagram.com"
@@ -407,7 +486,7 @@
                   </svg>
                 </a>
               </li>
-              <li class="social-list__item-footer">
+              <li class="social-list__item">
                 <a
                   class="social-list__link social-list__link--whitecolor"
                   href="https://twitter.com"
@@ -417,7 +496,7 @@
                   </svg>
                 </a>
               </li>
-              <li class="social-list__item-footer">
+              <li class="social-list__item">
                 <a
                   class="social-list__link social-list__link--whitecolor"
                   href="https://facebook.com"
@@ -427,7 +506,7 @@
                   </svg>
                 </a>
               </li>
-              <li class="social-list__item-footer">
+              <li class="social-list__item">
                 <a
                   class="social-list__link social-list__link--whitecolor"
                   href="https://linkedin.com"
@@ -450,7 +529,7 @@
               />
               <button
                 type="submit"
-                class="btn-submit form-subscribe__btn-submit"
+                class="btn-submit btn-submit--base btn-submit--200-50"
               >
                 Подписаться<svg
                   class="btn-submit__icon btn-submit__icon--right-of-text"

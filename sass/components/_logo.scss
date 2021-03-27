@@ -9,7 +9,7 @@
   // }
 
   &--infooter {
-    margin-bottom: 20px;
+    margin-bottom: var(--footer-vertical-item-interval);
     text-align: center;
   }
 }
