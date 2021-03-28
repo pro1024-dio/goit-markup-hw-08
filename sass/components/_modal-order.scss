@@ -3,23 +3,32 @@
   top: 50%;
   left: 50%;
   // height: 609px;
-  @media screen and (max-height: 609px), (max-width: 320px) {
+  @media screen and (max-height: 609px), (max-width: 450px) {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
+    overflow-y: scroll;
     transform-origin: center center;
     transform: translatex(0) scale(1);
   }
+  // width: calc(100% - 30px);
 
-  width: calc(100% - 30px);
+  @media screen and (max-width: 1199px) {
+    max-width: 450px;
+    max-height: 609px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 
   // @media screen and (max-width: 320px) {
   //   width: var(--minwidth-container);
   // }
 
-  overflow-y: scroll;
   padding: 40px;
   background-color: var(--white-color);
   border-radius: 4px;
@@ -48,10 +57,14 @@
   display: block;
   min-width: 100%;
   margin-bottom: 12px;
-  text-align: center;
   font-size: 20px;
+  line-height: 1.5;
   font-weight: 700;
-  line-height: 1.15;
+  @media screen and (max-width: 1200px) {
+    line-height: 1.15;
+  }
+
+  text-align: center;
   letter-spacing: 0.03em;
   color: var(--basic-hcolor);
 }
@@ -157,9 +170,26 @@
 
 .modal-order__chbox-icon {
   position: absolute;
-  left: 10px;
+  @media screen and (max-width: 1199px) {
+    left: 1px;
+  }
+  @media screen and (min-width: 1200px) {
+    left: 10px;
+  }
   top: 50%;
   transform: translateY(-50%);
   border: 2px solid var(--basic-hcolor);
   border-radius: 2px;
+}
+
+.modal-order__checkbox-label {
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }

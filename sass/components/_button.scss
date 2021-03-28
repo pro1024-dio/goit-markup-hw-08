@@ -48,6 +48,11 @@
     color: var(--basic-hcolor);
   }
 
+  &--modal-order {
+    display: block;
+    margin: 0 auto;
+  }
+
   &--close-modal-order {
     position: absolute;
     top: 8px;

@@ -7,6 +7,13 @@
 }
 
 .header__nav {
+  display: flex;
+  flex-basis: auto;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+
   @media screen and (max-width: 767px) {
     display: none;
   }

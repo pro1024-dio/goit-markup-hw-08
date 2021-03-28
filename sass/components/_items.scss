@@ -99,7 +99,10 @@
   font-weight: 700;
   color: var(--basic-hcolor);
   text-transform: uppercase;
-  text-align: center;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 
   &--with-margin-bottom {
     margin-bottom: 10px;

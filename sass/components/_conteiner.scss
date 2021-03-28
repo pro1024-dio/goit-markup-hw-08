@@ -16,24 +16,31 @@
 
   &--forheader {
     padding: 0 15px;
+
+    // @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    // }
   }
 
   &--forfooter {
     padding: 60px 15px;
-  }
 
-  &--display {
-    display: flex;
-  }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
 
-  &--aligncenter {
-    align-items: center;
-  }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      justify-content: center;
+    }
 
-  &--spacebetween {
-    //
-    align-items: center;
-    justify-content: space-between;
+    @media screen and (min-width: 1200px) {
+      justify-content: space-between;
+    }
   }
 
   &--forsection {
